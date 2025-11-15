@@ -1,3 +1,5 @@
+package pe.com.ideasystem.topologyinventory.domain.vo;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
