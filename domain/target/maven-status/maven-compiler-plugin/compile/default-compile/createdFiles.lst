@@ -1,0 +1,11 @@
+pe/com/ideasystem/topologyinventory/domain/vo/IP.class
+module-info.class
+pe/com/ideasystem/topologyinventory/domain/vo/Model.class
+pe/com/ideasystem/topologyinventory/domain/vo/Network.class
+pe/com/ideasystem/topologyinventory/domain/vo/Protocol.class
+pe/com/ideasystem/topologyinventory/domain/vo/RouterType.class
+pe/com/ideasystem/topologyinventory/domain/vo/Vendor.class
+pe/com/ideasystem/topologyinventory/domain/vo/Network$NetworkBuilder.class
+Id.class
+pe/com/ideasystem/topologyinventory/domain/vo/Location.class
+pe/com/ideasystem/topologyinventory/domain/vo/SwitchType.class

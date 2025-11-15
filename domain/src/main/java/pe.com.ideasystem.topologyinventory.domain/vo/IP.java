@@ -1,0 +1,31 @@
+package pe.com.ideasystem.topologyinventory.domain.vo;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+@EqualsAndHashCode
+public class IP {
+    private final String ipAddress;
+    private final Protocol protocol;
+
+    public IP(String ipAddress) {
+        if(ipAddress == null)
+            throw new IllegalArgumentException("Null IP address");
+
+        this.ipAddress = ipAddress;
+
+        if(ipAddress.length() <= 15) {
+            this.protocol = Protocol.IPV4;
+        } else {
+            this.protocol = Protocol.IPV6;
+        }
+    }
+
+    public static IP fromAdress(String ipAdress) {
+        return new IP(ipAdress);
+    }
+
+}
