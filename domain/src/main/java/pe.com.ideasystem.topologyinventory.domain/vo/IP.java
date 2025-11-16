@@ -24,7 +24,7 @@ public class IP {
         }
     }
 
-    public static IP fromAdress(String ipAdress) {
+    public static IP fromAddress(String ipAdress) {
         return new IP(ipAdress);
     }
 
