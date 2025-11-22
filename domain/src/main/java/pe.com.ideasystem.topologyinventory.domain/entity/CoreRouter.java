@@ -28,14 +28,16 @@ public final class CoreRouter extends Router {
         this.routers = routers;
     }
 
-    public Router addRouter(Router anyRouter) {
+    public CoreRouter addRouter(Router anyRouter) {
         var sameCountryRouterSpec = new SameCountrySpec(this);
         var sameIpSpec = new SameIpSpec(this);
 
         sameCountryRouterSpec.check(anyRouter);
         sameIpSpec.check(anyRouter);
 
-        return this.routers.put(anyRouter.id, anyRouter);
+        this.routers.put(anyRouter.id, anyRouter);
+
+        return this;
     }
 
     public Router removeRouter(Router anyRouter) {

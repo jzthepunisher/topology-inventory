@@ -5,6 +5,8 @@ pe/com/ideasystem/topologyinventory/domain/vo/Vendor.class
 pe/com/ideasystem/topologyinventory/domain/specification/SameIpSpec.class
 pe/com/ideasystem/topologyinventory/domain/entity/Router.class
 pe/com/ideasystem/topologyinventory/domain/entity/CoreRouter.class
+pe/com/ideasystem/topologyinventory/domain/service/NetworkService.class
+pe/com/ideasystem/topologyinventory/domain/service/RouterService.class
 pe/com/ideasystem/topologyinventory/domain/vo/IP.class
 pe/com/ideasystem/topologyinventory/domain/entity/CoreRouter$1.class
 module-info.class
@@ -20,7 +22,10 @@ pe/com/ideasystem/topologyinventory/domain/vo/Protocol.class
 pe/com/ideasystem/topologyinventory/domain/exception/GenericSpecificationException.class
 pe/com/ideasystem/topologyinventory/domain/vo/Location.class
 pe/com/ideasystem/topologyinventory/domain/entity/EdgeRouter$EdgeRouterBuilder.class
+pe/com/ideasystem/topologyinventory/domain/entity/factory/RouterFactory$1.class
+pe/com/ideasystem/topologyinventory/domain/service/SwitchService.class
 pe/com/ideasystem/topologyinventory/domain/entity/CoreRouter$CoreRouterBuilder.class
+pe/com/ideasystem/topologyinventory/domain/entity/factory/RouterFactory.class
 pe/com/ideasystem/topologyinventory/domain/vo/Model.class
 pe/com/ideasystem/topologyinventory/domain/vo/RouterType.class
 pe/com/ideasystem/topologyinventory/domain/entity/EdgeRouter.class

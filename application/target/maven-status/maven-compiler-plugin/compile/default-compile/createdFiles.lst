@@ -1,0 +1,8 @@
+module-info.class
+pe/com/ideasystem/topologyinventory/application/ports/in/SwitchManagementInputPort.class
+pe/com/ideasystem/topologyinventory/application/ports/in/RouterManagementInputPort.class
+pe/com/ideasystem/topologyinventory/application/usecases/NetworkManagementUseCase.class
+pe/com/ideasystem/topologyinventory/application/ports/output/RouterManagementOutputPort.class
+pe/com/ideasystem/topologyinventory/application/usecases/SwitchManagementUseCase.class
+pe/com/ideasystem/topologyinventory/application/ports/in/NetworkManagementInputPort.class
+pe/com/ideasystem/topologyinventory/application/usecases/RouterManagementUseCase.class
