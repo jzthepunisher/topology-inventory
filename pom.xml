@@ -17,6 +17,7 @@
 
     <properties>
         <lombok.version>1.18.26</lombok.version>
+        <cucumber.version>6.10.4</cucumber.version>
     </properties>
 
     <dependencies>
@@ -85,6 +86,7 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -96,7 +98,7 @@
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>

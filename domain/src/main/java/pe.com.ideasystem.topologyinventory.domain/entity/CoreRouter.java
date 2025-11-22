@@ -14,6 +14,7 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Getter
@@ -25,7 +26,7 @@ public final class CoreRouter extends Router {
     @Builder
     public CoreRouter(Id id, Vendor vendor, Model model, IP ip, Location location, RouterType routerType, Map<Id, Router> routers) {
         super(id, vendor, model, ip, location, routerType);
-        this.routers = routers;
+        this.routers = routers == null ? new HashMap<Id, Router>() : routers;
     }
 
     public CoreRouter addRouter(Router anyRouter) {
