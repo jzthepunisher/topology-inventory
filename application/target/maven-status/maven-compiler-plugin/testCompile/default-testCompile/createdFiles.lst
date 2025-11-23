@@ -1,3 +1,11 @@
+pe/com/ideasystem/topologyinventory/application/SwitchAdd.class
+pe/com/ideasystem/topologyinventory/application/SwitchRemove.class
 pe/com/ideasystem/topologyinventory/application/ApplicationTestData.class
 pe/com/ideasystem/topologyinventory/application/ApplicationTest.class
+pe/com/ideasystem/topologyinventory/application/RouterCreate.class
+pe/com/ideasystem/topologyinventory/application/RouterRemove.class
+pe/com/ideasystem/topologyinventory/application/NetworkRemove.class
+pe/com/ideasystem/topologyinventory/application/SwitchCreate.class
+pe/com/ideasystem/topologyinventory/application/NetworkCreate.class
 pe/com/ideasystem/topologyinventory/application/RouterAdd.class
+pe/com/ideasystem/topologyinventory/application/NetworkAdd.class
