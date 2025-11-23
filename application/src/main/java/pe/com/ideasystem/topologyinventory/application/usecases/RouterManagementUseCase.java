@@ -11,11 +11,14 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 public interface RouterManagementUseCase {
 
-    Router createRouter(Vendor vendor,
+    Router createRouter(Id id,
+                        Vendor vendor,
                         Model model,
                         IP ip,
                         Location location,
                         RouterType routerType);
+
+    Router removeRouter(Id id);
 
     CoreRouter addRouterToCoreRouter(Router router,
                                      CoreRouter coreRouter);

@@ -1,5 +1,7 @@
 package pe.com.ideasystem.topologyinventory.application.ports.input;
 
+import lombok.NoArgsConstructor;
+import pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.application.usecases.SwitchManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
@@ -10,7 +12,14 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.SwitchType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
+@NoArgsConstructor
 public class SwitchManagementInputPort implements SwitchManagementUseCase {
+
+    private SwitchManagementOutputPort switchManagementOutputPort;
+
+    public SwitchManagementInputPort(SwitchManagementOutputPort switchManagementOutputPort) {
+        this.switchManagementOutputPort = switchManagementOutputPort;
+    }
 
     @Override
     public Switch createSwitch(Vendor vendor,
@@ -26,6 +35,11 @@ public class SwitchManagementInputPort implements SwitchManagementUseCase {
                 .location(location)
                 .switchType(switchType)
                 .build();
+    }
+
+    @Override
+    public Switch retrieveSwitch(Id id){
+        return switchManagementOutputPort.retrieveSwitch(id);
     }
 
     @Override

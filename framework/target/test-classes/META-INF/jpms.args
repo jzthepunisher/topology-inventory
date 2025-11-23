@@ -1,4 +1,0 @@
---patch-module
-framework=_
---add-reads
-framework=ALL-UNNAMED

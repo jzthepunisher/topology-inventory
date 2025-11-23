@@ -26,6 +26,7 @@ public class RouterAdd extends ApplicationTestData {
     @Given("I have an edge router")
     public void assert_edge_router_exists(){
         edgeRouter = (EdgeRouter) this.routerManagementUseCase.createRouter(
+                null,
                 Vendor.HP,
                 Model.XYZ0004,
                 IP.fromAddress("20.0.0.1"),
@@ -38,6 +39,7 @@ public class RouterAdd extends ApplicationTestData {
     @And("I have a core router")
     public void assert_core_router_exists() {
         coreRouter = (CoreRouter) this.routerManagementUseCase.createRouter(
+                null,
                 Vendor.CISCO,
                 Model.XYZ0001,
                 IP.fromAddress("30.0.0.1"),
@@ -59,6 +61,7 @@ public class RouterAdd extends ApplicationTestData {
     @Given("I have this core router")
     public void assert_this_core_router_exists(){
         coreRouter = (CoreRouter) this.routerManagementUseCase.createRouter(
+                null,
                 Vendor.CISCO,
                 Model.XYZ0001,
                 IP.fromAddress("30.0.0.1"),
@@ -71,6 +74,7 @@ public class RouterAdd extends ApplicationTestData {
     @And("I have another core router")
     public void assert_another_core_router_exists(){
         anotherCoreRouter = (CoreRouter) this.routerManagementUseCase.createRouter(
+                null,
                 Vendor.CISCO,
                 Model.XYZ0001,
                 IP.fromAddress("40.0.0.1"),

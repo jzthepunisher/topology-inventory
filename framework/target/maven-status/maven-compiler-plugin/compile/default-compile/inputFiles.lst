@@ -9,7 +9,10 @@
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/RouterManagementH2Adapter.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/ModelData.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/SwitchTypeData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/input/generic/NetworkManagementGenericAdapter.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/IPData.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/NetworkData.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/ProtocolData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/input/generic/SwitchManagementGenericAdapter.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/SwitchData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/input/generic/RouterManagementGenericAdapter.java

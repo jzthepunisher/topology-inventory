@@ -6,10 +6,13 @@ pe/com/ideasystem/topologyinventory/framework/output/h2/data/LocationData.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/RouterData$RouterDataBuilder.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/mappers/RouterH2Mapper.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/RouterData.class
+pe/com/ideasystem/topologyinventory/framework/input/generic/SwitchManagementGenericAdapter.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/LocationData$LocationDataBuilder.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/SwitchTypeData.class
 module-info.class
+pe/com/ideasystem/topologyinventory/framework/input/generic/NetworkManagementGenericAdapter.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/RouterTypeData.class
+pe/com/ideasystem/topologyinventory/framework/input/generic/RouterManagementGenericAdapter.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/SwitchManagementH2Adapter.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/ProtocolData.class
 pe/com/ideasystem/topologyinventory/framework/output/h2/data/ModelData.class

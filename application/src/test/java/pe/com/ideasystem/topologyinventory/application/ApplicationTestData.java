@@ -46,7 +46,7 @@ public class ApplicationTestData {
 
     public void loadData() {
         this.routerManagementUseCase = new RouterManagementInputPort();
-        this.switchManagementUseCase = new SwitchManagementInputPort();
+        this.switchManagementUseCase = new SwitchManagementInputPort(null);
         this.networkManagementUseCase = new NetworkManagementInputPort();
         this.locationA = new Location(
                 "Av Republica Argentina 3109",

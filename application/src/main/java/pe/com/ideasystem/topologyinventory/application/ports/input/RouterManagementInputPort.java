@@ -18,13 +18,23 @@ public class RouterManagementInputPort implements RouterManagementUseCase {
 
     RouterManagementOutputPort routerManagementOutputPort;
 
+    public RouterManagementInputPort(RouterManagementOutputPort routerNetworkOutputPort){
+        this.routerManagementOutputPort = routerNetworkOutputPort;
+    }
+
     @Override
-    public Router createRouter(Vendor vendor,
+    public Router createRouter(Id id,
+                               Vendor vendor,
                                Model model,
                                IP ip,
                                Location location,
                                RouterType routerType) {
         return RouterFactory.getRouter(null, vendor, model, ip, location, routerType);
+    }
+
+    @Override
+    public Router removeRouter(Id id) {
+        return routerManagementOutputPort.removeRouter(id);
     }
 
     @Override

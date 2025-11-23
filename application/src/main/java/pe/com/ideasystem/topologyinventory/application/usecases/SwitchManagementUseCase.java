@@ -3,6 +3,7 @@ package pe.com.ideasystem.topologyinventory.application.usecases;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
+import pe.com.ideasystem.topologyinventory.domain.vo.Id;
 import pe.com.ideasystem.topologyinventory.domain.vo.Location;
 import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.SwitchType;
@@ -17,6 +18,8 @@ public interface SwitchManagementUseCase {
       Location location,
       SwitchType switchType
     );
+
+    Switch retrieveSwitch(Id id);
 
     EdgeRouter addSwitchToEdgeRouter(Switch networkSwitch, EdgeRouter edgeRouter);
 
