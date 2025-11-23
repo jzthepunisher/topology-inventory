@@ -18,6 +18,7 @@
         </processorPath>
         <module name="application" />
         <module name="domain" />
+        <module name="framework" />
       </profile>
     </annotationProcessing>
   </component>

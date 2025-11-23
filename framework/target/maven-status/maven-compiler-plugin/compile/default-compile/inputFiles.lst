@@ -1,0 +1,15 @@
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/RouterTypeData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/VendorData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/module-info.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/RouterData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/SwitchManagementH2Adapter.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/LocationData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/mappers/RouterH2Mapper.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/UUIDTypeConverter.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/RouterManagementH2Adapter.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/ModelData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/SwitchTypeData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/IPData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/NetworkData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/ProtocolData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/output/h2/data/SwitchData.java

@@ -2,6 +2,7 @@ package pe.com.ideasystem.topologyinventory.domain.entity;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 import pe.com.ideasystem.topologyinventory.domain.specification.CIDRSpecification;
 import pe.com.ideasystem.topologyinventory.domain.specification.NetworkAmountSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.NetworkAvailabilitySpec;
@@ -23,11 +24,15 @@ public final class Switch extends Equipment {
     private final SwitchType switchType;
     private final List<Network> switchNetworks;
 
+    @Setter
+    private Id routerId;
+
     @Builder
-    public Switch(Id id, Vendor vendor, Model model, IP ip, Location location, SwitchType switchType, List<Network> switchNetworks) {
+    public Switch(Id id, Id routerId, Vendor vendor, Model model, IP ip, Location location, SwitchType switchType, List<Network> switchNetworks) {
         super(id, vendor, model, ip, location);
         this.switchType = switchType;
         this.switchNetworks = switchNetworks;
+        this.routerId = routerId;
     }
 
     public static Predicate<Network> getNetworkProtocolPredicate(Protocol protocol) {

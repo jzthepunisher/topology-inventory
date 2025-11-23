@@ -2,6 +2,7 @@ package pe.com.ideasystem.topologyinventory.domain.entity;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptyRouterSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptySwitchSpec;
@@ -21,7 +22,8 @@ import java.util.Map;
 @ToString
 public final class CoreRouter extends Router {
 
-    private final Map<Id, Router> routers;
+    @Setter
+    private Map<Id, Router> routers;
 
     @Builder
     public CoreRouter(Id id, Vendor vendor, Model model, IP ip, Location location, RouterType routerType, Map<Id, Router> routers) {

@@ -1,8 +1,8 @@
 package pe.com.ideasystem.topologyinventory.application;
 
-import pe.com.ideasystem.topologyinventory.application.ports.in.NetworkManagementInputPort;
-import pe.com.ideasystem.topologyinventory.application.ports.in.RouterManagementInputPort;
-import pe.com.ideasystem.topologyinventory.application.ports.in.SwitchManagementInputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.input.NetworkManagementInputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.input.RouterManagementInputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.input.SwitchManagementInputPort;
 import pe.com.ideasystem.topologyinventory.application.usecases.NetworkManagementUseCase;
 import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
 import pe.com.ideasystem.topologyinventory.application.usecases.SwitchManagementUseCase;

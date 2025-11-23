@@ -1,8 +1,9 @@
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/output/RouterManagementOutputPort.java
-/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/in/RouterManagementInputPort.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/input/SwitchManagementInputPort.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/usecases/RouterManagementUseCase.java
-/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/in/SwitchManagementInputPort.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/usecases/SwitchManagementUseCase.java
-/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/in/NetworkManagementInputPort.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/module-info.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/input/RouterManagementInputPort.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/input/NetworkManagementInputPort.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/usecases/NetworkManagementUseCase.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/src/main/java/pe/com/ideasystem/topologyinventory/application/ports/output/SwitchManagementOutputPort.java

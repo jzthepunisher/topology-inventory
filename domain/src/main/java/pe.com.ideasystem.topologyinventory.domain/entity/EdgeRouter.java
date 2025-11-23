@@ -2,6 +2,7 @@ package pe.com.ideasystem.topologyinventory.domain.entity;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptyNetworkSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.SameCountrySpec;
@@ -19,7 +20,8 @@ import java.util.Map;
 @ToString
 public final class EdgeRouter extends Router {
 
-    private final Map<Id, Switch> switches;
+    @Setter
+    private Map<Id, Switch> switches;
 
     @Builder
     public EdgeRouter(Id id,
