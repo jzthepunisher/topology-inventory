@@ -7,7 +7,7 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Id;
 import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
-import pe.com.ideasystem.topologyinventory.framework.input.generic.RouterManagementGenericAdapter;
+import pe.com.ideasystem.topologyinventory.framework.adapters.input.generic.RouterManagementGenericAdapter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;

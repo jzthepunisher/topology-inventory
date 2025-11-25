@@ -8,6 +8,6 @@ module framework {
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.core;
 
-    exports pe.com.ideasystem.topologyinventory.framework.output.h2.data;
-    opens pe.com.ideasystem.topologyinventory.framework.output.h2.data;
+    exports pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;
+    opens pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;
 }
