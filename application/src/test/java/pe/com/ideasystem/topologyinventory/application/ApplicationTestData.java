@@ -89,6 +89,8 @@ public class ApplicationTestData {
                 routerType(RouterType.EDGE).
                 switches(switchesOfEdgeRouter).
                 build();
+        this.networkSwitch.setRouterId(this.edgeRouter.getId());
+
         this.routersOfCoreRouter.put(edgeRouter.getId(), edgeRouter);
         this.coreRouter = CoreRouter.builder().
                 id(Id.withoutId()).

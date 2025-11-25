@@ -22,8 +22,7 @@ public class NetworkRemove  extends ApplicationTestData{
 
     @Given("I know the network I want to remove")
     public void i_know_the_network_i_want_to_remove(){
-        predicate = Network.
-                getNetworkNamePredicate("TestNetwork");
+        predicate = Network.getNetworkNamePredicate("TestNetwork");
         network = NetworkService.findNetwork(networks, predicate);
         assertEquals("TestNetwork", network.getNetworkName());
     }
@@ -35,10 +34,8 @@ public class NetworkRemove  extends ApplicationTestData{
 
     @Then("I remove the network from the switch")
     public void i_remove_the_network_from_the_switch(){
-        this.networkManagementUseCase.
-                removeNetworkFromSwitch("Marketing", networkSwitch);
-        network = NetworkService.
-                findNetwork(networks, predicate);
+        this.networkManagementUseCase.removeNetworkFromSwitch("Marketing", networkSwitch);
+        network = NetworkService.findNetwork(networks, predicate);
         assertNull(network);
     }
 }

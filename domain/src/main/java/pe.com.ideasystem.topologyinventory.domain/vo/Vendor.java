@@ -6,5 +6,5 @@ public enum Vendor {
     HP,
     TPLINK,
     DLINK,
-    JUNIER
+    JUNIPER
 }
