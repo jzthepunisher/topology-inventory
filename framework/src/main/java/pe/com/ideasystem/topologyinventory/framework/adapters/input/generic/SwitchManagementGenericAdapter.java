@@ -22,17 +22,12 @@ public class SwitchManagementGenericAdapter {
     private SwitchManagementUseCase switchManagementUseCase;
     private RouterManagementUseCase routerManagementUseCase;
 
-    public SwitchManagementGenericAdapter(){
-        setPorts();
-    }
-
-    private void setPorts(){
-        this.routerManagementUseCase = new RouterManagementInputPort(
-                RouterManagementH2Adapter.getInstance()
-        );
-        this.switchManagementUseCase = new SwitchManagementInputPort(
-                SwitchManagementH2Adapter.getInstance()
-        );
+    public SwitchManagementGenericAdapter(
+            RouterManagementUseCase routerManagementUseCase,
+            SwitchManagementUseCase switchManagementUseCase
+    ) {
+        this.routerManagementUseCase = routerManagementUseCase;
+        this.switchManagementUseCase = switchManagementUseCase;
     }
 
     /**

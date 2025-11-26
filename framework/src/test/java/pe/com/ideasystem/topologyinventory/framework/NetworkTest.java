@@ -25,8 +25,8 @@ public class NetworkTest extends FrameworkTestData {
     SwitchManagementGenericAdapter switchManagementGenericAdapter;
 
     public NetworkTest(){
-        this.networkManagementGenericAdapter = new NetworkManagementGenericAdapter();
-        this.switchManagementGenericAdapter = new SwitchManagementGenericAdapter();
+        this.networkManagementGenericAdapter = new NetworkManagementGenericAdapter(null, null);
+        this.switchManagementGenericAdapter = new SwitchManagementGenericAdapter(null, null);
         loadData();
     }
     @Test

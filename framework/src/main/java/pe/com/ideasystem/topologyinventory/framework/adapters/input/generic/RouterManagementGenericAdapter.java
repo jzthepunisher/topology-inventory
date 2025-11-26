@@ -12,25 +12,18 @@ import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.RouterManagementH2Adapter;
 
-
 public class RouterManagementGenericAdapter {
 
     private RouterManagementUseCase routerManagementUseCase;
 
-    public RouterManagementGenericAdapter() {
-        setPorts();
-    }
-
-    private void setPorts(){
-        this.routerManagementUseCase = new RouterManagementInputPort(
-                RouterManagementH2Adapter.getInstance()
-        );
+    public RouterManagementGenericAdapter(RouterManagementUseCase routerManagementUseCase) {
+        this.routerManagementUseCase = routerManagementUseCase;
     }
 
     /**
      * GET /router/retrieve/{id}
      * */
-    public Router retrieveRouter(Id id){
+    public Router retrieveRouter(Id id) {
         return routerManagementUseCase.retrieveRouter(id);
     }
 

@@ -22,7 +22,7 @@ public class SwitchTest extends FrameworkTestData {
     SwitchManagementGenericAdapter switchManagementGenericAdapter;
 
     public SwitchTest(){
-        this.switchManagementGenericAdapter = new SwitchManagementGenericAdapter();
+        this.switchManagementGenericAdapter = new SwitchManagementGenericAdapter(null, null);
         loadData();
     }
 

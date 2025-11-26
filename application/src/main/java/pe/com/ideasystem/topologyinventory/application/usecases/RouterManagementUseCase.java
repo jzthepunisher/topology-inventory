@@ -1,5 +1,6 @@
 package pe.com.ideasystem.topologyinventory.application.usecases;
 
+import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.domain.entity.CoreRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Router;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
@@ -10,6 +11,7 @@ import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 public interface RouterManagementUseCase {
+    void setOutputPort(RouterManagementOutputPort routerManagementOutputPort);
 
     Router createRouter(Id id,
                         Vendor vendor,

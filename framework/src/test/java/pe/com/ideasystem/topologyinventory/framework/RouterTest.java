@@ -17,15 +17,14 @@ public class RouterTest extends FrameworkTestData {
     RouterManagementGenericAdapter routerManagementGenericAdapter;
 
     public RouterTest() {
-        this.routerManagementGenericAdapter = new RouterManagementGenericAdapter();
+        this.routerManagementGenericAdapter = new RouterManagementGenericAdapter(null);
         loadData();
     }
 
     @Test
     public void retrieveRouter() {
         var id = Id.withId("b832ef4f-f894-4194-8feb-a99c2cd4be0c");
-        var actualId = routerManagementGenericAdapter.
-                retrieveRouter(id).getId();
+        var actualId = routerManagementGenericAdapter.retrieveRouter(id).getId();
         assertEquals(id, actualId);
     }
 

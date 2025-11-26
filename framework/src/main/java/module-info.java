@@ -10,4 +10,15 @@ module framework {
 
     exports pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;
     opens pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;
+
+    provides pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort
+            with pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.RouterManagementH2Adapter;
+    provides pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort
+            with pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.SwitchManagementH2Adapter;
+
+    uses pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
+    uses pe.com.ideasystem.topologyinventory.application.usecases.SwitchManagementUseCase;
+    uses pe.com.ideasystem.topologyinventory.application.usecases.NetworkManagementUseCase;
+    uses pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
+    uses pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
 }
