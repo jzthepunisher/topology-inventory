@@ -1,5 +1,7 @@
 package pe.com.ideasystem.topologyinventory.application.usecases;
 
+import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
@@ -10,6 +12,8 @@ import pe.com.ideasystem.topologyinventory.domain.vo.SwitchType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 public interface SwitchManagementUseCase {
+
+    void setOutputPort(SwitchManagementOutputPort switchManagementOutputPort);
 
     Switch createSwitch(
       Vendor vendor,

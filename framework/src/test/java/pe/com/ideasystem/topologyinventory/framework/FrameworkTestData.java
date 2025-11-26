@@ -1,5 +1,11 @@
 package pe.com.ideasystem.topologyinventory.framework;
 
+import pe.com.ideasystem.topologyinventory.application.ports.input.RouterManagementInputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
+import pe.com.ideasystem.topologyinventory.application.usecases.NetworkManagementUseCase;
+import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
+import pe.com.ideasystem.topologyinventory.application.usecases.SwitchManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.CoreRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Router;
@@ -12,13 +18,22 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Network;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.SwitchType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
+import pe.com.ideasystem.topologyinventory.framework.adapters.input.generic.NetworkManagementGenericAdapter;
+import pe.com.ideasystem.topologyinventory.framework.adapters.input.generic.RouterManagementGenericAdapter;
+import pe.com.ideasystem.topologyinventory.framework.adapters.input.generic.SwitchManagementGenericAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.ServiceLoader;
 
 public class FrameworkTestData {
+
+    protected RouterManagementGenericAdapter routerManagementGenericAdapter;
+    protected SwitchManagementGenericAdapter switchManagementGenericAdapter;
+    protected NetworkManagementGenericAdapter networkManagementGenericAdapter;
+
     protected List<Router> routers = new ArrayList<>();
 
     protected List<Switch> switches = new ArrayList<>();
@@ -113,5 +128,28 @@ public class FrameworkTestData {
                 location(locationA).
                 routerType(RouterType.EDGE).
                 build();
+    }
+
+    protected void loadPortsAndUseCases() {
+        ServiceLoader<RouterManagementUseCase> loaderUseCaseRouter = ServiceLoader.load(RouterManagementUseCase.class);
+        RouterManagementUseCase routerManagementUseCase = loaderUseCaseRouter.findFirst().get();
+        ServiceLoader<RouterManagementOutputPort> loaderOutputRouter = ServiceLoader.load(RouterManagementOutputPort.class);
+        RouterManagementOutputPort routerManagementOutputPort = loaderOutputRouter.findFirst().get();
+
+        ServiceLoader<SwitchManagementUseCase> loaderUseCaseSwitch = ServiceLoader.load(SwitchManagementUseCase.class);
+        SwitchManagementUseCase switchManagementUseCase = loaderUseCaseSwitch.findFirst().get();
+        ServiceLoader<SwitchManagementOutputPort> loaderOutputSwitch = ServiceLoader.load(SwitchManagementOutputPort.class);
+        SwitchManagementOutputPort switchManagementOutputPort = loaderOutputSwitch.findFirst().get();
+
+        ServiceLoader<NetworkManagementUseCase> loaderUseCaseNetwork = ServiceLoader.load(NetworkManagementUseCase.class);
+        NetworkManagementUseCase networkManagementUseCase = loaderUseCaseNetwork.findFirst().get();
+
+        routerManagementUseCase.setOutputPort(routerManagementOutputPort);
+        switchManagementUseCase.setOutputPort(switchManagementOutputPort);
+        networkManagementUseCase.setOutputPort(routerManagementOutputPort);
+
+        this.routerManagementGenericAdapter = new RouterManagementGenericAdapter(routerManagementUseCase);
+        this.switchManagementGenericAdapter = new SwitchManagementGenericAdapter(routerManagementUseCase, switchManagementUseCase);
+        this.networkManagementGenericAdapter = new NetworkManagementGenericAdapter(switchManagementUseCase, networkManagementUseCase);
     }
 }

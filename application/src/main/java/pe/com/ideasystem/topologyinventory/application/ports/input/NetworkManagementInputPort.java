@@ -2,6 +2,7 @@ package pe.com.ideasystem.topologyinventory.application.ports.input;
 
 import lombok.NoArgsConstructor;
 import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
+import pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.application.usecases.NetworkManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
@@ -20,6 +21,12 @@ public class NetworkManagementInputPort implements NetworkManagementUseCase {
     public NetworkManagementInputPort(RouterManagementOutputPort routerNetworkOutputPort){
         this.routerManagementOutputPort = routerNetworkOutputPort;
     }
+
+    @Override
+    public void setOutputPort(RouterManagementOutputPort routerManagementOutputPort) {
+        this.routerManagementOutputPort = routerManagementOutputPort;
+    }
+
 
     @Override
     public Network createNetwork(IP networkAddress, String networkName, int networkCidr) {

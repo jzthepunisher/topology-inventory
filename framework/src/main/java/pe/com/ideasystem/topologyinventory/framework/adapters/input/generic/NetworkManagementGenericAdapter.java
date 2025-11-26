@@ -16,7 +16,7 @@ public class NetworkManagementGenericAdapter {
     private NetworkManagementUseCase networkManagementUseCase;
 
     public NetworkManagementGenericAdapter(SwitchManagementUseCase switchManagementUseCase,
-                                           NetworkManagementUseCase networkManagementUseCase){
+                                           NetworkManagementUseCase networkManagementUseCase) {
         this.switchManagementUseCase = switchManagementUseCase;
         this.networkManagementUseCase = networkManagementUseCase;
     }
