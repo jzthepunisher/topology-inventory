@@ -1,5 +1,6 @@
 package pe.com.ideasystem.topologyinventory.framework.adapters.output.h2;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -10,6 +11,7 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Id;
 import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data.RouterData;
 import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.mappers.RouterH2Mapper;
 
+@ApplicationScoped
 public class RouterManagementH2Adapter implements RouterManagementOutputPort {
 
     private static RouterManagementH2Adapter instance;

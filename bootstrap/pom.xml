@@ -17,12 +17,10 @@
             <groupId>pe.com.ideasystem</groupId>
             <artifactId>application</artifactId>
         </dependency>
-        <!--
         <dependency>
-          <groupId>dev.davivieira</groupId>
-          <artifactId>framework</artifactId>
+            <groupId>pe.com.ideasystem</groupId>
+            <artifactId>framework</artifactId>
         </dependency>
-        -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>

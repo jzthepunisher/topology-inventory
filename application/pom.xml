@@ -20,6 +20,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>io.quarkiverse.cucumber</groupId>
+            <artifactId>quarkus-cucumber</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>

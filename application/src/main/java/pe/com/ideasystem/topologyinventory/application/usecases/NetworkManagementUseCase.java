@@ -1,13 +1,10 @@
 package pe.com.ideasystem.topologyinventory.application.usecases;
 
-import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
 import pe.com.ideasystem.topologyinventory.domain.vo.Network;
 
 public interface NetworkManagementUseCase {
-
-    void setOutputPort(RouterManagementOutputPort routerManagementOutputPort);
 
     Network createNetwork(
             IP networkAddress,

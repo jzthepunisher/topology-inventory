@@ -1,8 +1,9 @@
 package pe.com.ideasystem.topologyinventory.application.ports.input;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import lombok.NoArgsConstructor;
 import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
-import pe.com.ideasystem.topologyinventory.application.ports.output.SwitchManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.application.usecases.NetworkManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Switch;
@@ -13,20 +14,12 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Network;
 
 import java.util.function.Predicate;
 
+@ApplicationScoped
 @NoArgsConstructor
 public class NetworkManagementInputPort implements NetworkManagementUseCase {
 
+    @Inject
     RouterManagementOutputPort routerManagementOutputPort;
-
-    public NetworkManagementInputPort(RouterManagementOutputPort routerNetworkOutputPort){
-        this.routerManagementOutputPort = routerNetworkOutputPort;
-    }
-
-    @Override
-    public void setOutputPort(RouterManagementOutputPort routerManagementOutputPort) {
-        this.routerManagementOutputPort = routerManagementOutputPort;
-    }
-
 
     @Override
     public Network createNetwork(IP networkAddress, String networkName, int networkCidr) {

@@ -1,5 +1,7 @@
 package pe.com.ideasystem.topologyinventory.application.ports.input;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import lombok.NoArgsConstructor;
 import pe.com.ideasystem.topologyinventory.application.ports.output.RouterManagementOutputPort;
 import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
@@ -13,19 +15,12 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
+@ApplicationScoped
 @NoArgsConstructor
 public class RouterManagementInputPort implements RouterManagementUseCase {
 
+    @Inject
     RouterManagementOutputPort routerManagementOutputPort;
-
-    public RouterManagementInputPort(RouterManagementOutputPort routerNetworkOutputPort){
-        this.routerManagementOutputPort = routerNetworkOutputPort;
-    }
-
-    @Override
-    public void setOutputPort(RouterManagementOutputPort routerManagementOutputPort) {
-        this.routerManagementOutputPort = routerManagementOutputPort;
-    }
 
     @Override
     public Router createRouter(Id id,

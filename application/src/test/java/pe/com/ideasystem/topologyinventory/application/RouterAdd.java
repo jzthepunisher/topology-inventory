@@ -3,6 +3,8 @@ package pe.com.ideasystem.topologyinventory.application;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import jakarta.inject.Inject;
+import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.CoreRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;

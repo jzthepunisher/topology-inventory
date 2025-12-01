@@ -1,6 +1,8 @@
 module application {
     requires domain;
     requires static lombok;
+    requires jakarta.inject;
+    requires jakarta.cdi;
 
     exports pe.com.ideasystem.topologyinventory.application.ports.input;
     exports pe.com.ideasystem.topologyinventory.application.ports.output;

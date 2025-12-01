@@ -1,6 +1,7 @@
 package pe.com.ideasystem.topologyinventory.framework.adapters.input.generic;
 
-import pe.com.ideasystem.topologyinventory.application.ports.input.RouterManagementInputPort;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.CoreRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Router;
@@ -10,15 +11,12 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Location;
 import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
-import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.RouterManagementH2Adapter;
 
+@ApplicationScoped
 public class RouterManagementGenericAdapter {
 
+    @Inject
     private RouterManagementUseCase routerManagementUseCase;
-
-    public RouterManagementGenericAdapter(RouterManagementUseCase routerManagementUseCase) {
-        this.routerManagementUseCase = routerManagementUseCase;
-    }
 
     /**
      * GET /router/retrieve/{id}

@@ -1,7 +1,7 @@
 package pe.com.ideasystem.topologyinventory.framework.adapters.input.generic;
 
-import pe.com.ideasystem.topologyinventory.application.ports.input.RouterManagementInputPort;
-import pe.com.ideasystem.topologyinventory.application.ports.input.SwitchManagementInputPort;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import pe.com.ideasystem.topologyinventory.application.usecases.RouterManagementUseCase;
 import pe.com.ideasystem.topologyinventory.application.usecases.SwitchManagementUseCase;
 import pe.com.ideasystem.topologyinventory.domain.entity.EdgeRouter;
@@ -14,21 +14,14 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Model;
 import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.SwitchType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
-import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.RouterManagementH2Adapter;
-import pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.SwitchManagementH2Adapter;
 
+@ApplicationScoped
 public class SwitchManagementGenericAdapter {
 
+    @Inject
     private SwitchManagementUseCase switchManagementUseCase;
+    @Inject
     private RouterManagementUseCase routerManagementUseCase;
-
-    public SwitchManagementGenericAdapter(
-            RouterManagementUseCase routerManagementUseCase,
-            SwitchManagementUseCase switchManagementUseCase
-    ) {
-        this.routerManagementUseCase = routerManagementUseCase;
-        this.switchManagementUseCase = switchManagementUseCase;
-    }
 
     /**
      * GET /switch/retrieve/{id}

@@ -13,8 +13,6 @@ import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 public interface SwitchManagementUseCase {
 
-    void setOutputPort(SwitchManagementOutputPort switchManagementOutputPort);
-
     Switch createSwitch(
       Vendor vendor,
       Model model,

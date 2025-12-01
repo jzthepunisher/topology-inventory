@@ -11,7 +11,6 @@ import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 public interface RouterManagementUseCase {
-    void setOutputPort(RouterManagementOutputPort routerManagementOutputPort);
 
     Router createRouter(Id id,
                         Vendor vendor,

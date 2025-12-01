@@ -27,26 +27,42 @@ import java.util.Map;
 public class ApplicationTestData {
 
     protected RouterManagementUseCase routerManagementUseCase;
+
     protected SwitchManagementUseCase switchManagementUseCase;
+
     protected NetworkManagementUseCase networkManagementUseCase;
+
     protected Router router;
+
     protected List<Router> routers = new ArrayList<>();
+
     protected List<Switch> switches = new ArrayList<>();
+
     protected List<Network> networks = new ArrayList<>();
+
     protected Map<Id, Router> routersOfCoreRouter = new HashMap<>();
+
     protected Map<Id, Switch> switchesOfEdgeRouter = new HashMap<>();
+
     protected Network network;
+
     protected Switch networkSwitch;
+
     protected CoreRouter coreRouter;
+
     protected CoreRouter newCoreRouter;
+
     protected EdgeRouter edgeRouter;
+
     protected EdgeRouter newEdgeRouter;
+
     protected Location locationA;
+
     protected Location locationB;
 
-    public void loadData() {
+    public void loadData(){
         this.routerManagementUseCase = new RouterManagementInputPort();
-        this.switchManagementUseCase = new SwitchManagementInputPort(null);
+        this.switchManagementUseCase = new SwitchManagementInputPort();
         this.networkManagementUseCase = new NetworkManagementInputPort();
         this.locationA = new Location(
                 "Av Republica Argentina 3109",
@@ -64,7 +80,7 @@ public class ApplicationTestData {
                 "Brazil",
                 11F,
                 -11F);
-        this.network = Network.builder().
+        this.network  = Network.builder().
                 networkAddress(IP.fromAddress("20.0.0.0")).
                 networkName("TestNetwork").
                 networkCidr(8).
@@ -89,8 +105,6 @@ public class ApplicationTestData {
                 routerType(RouterType.EDGE).
                 switches(switchesOfEdgeRouter).
                 build();
-        this.networkSwitch.setRouterId(this.edgeRouter.getId());
-
         this.routersOfCoreRouter.put(edgeRouter.getId(), edgeRouter);
         this.coreRouter = CoreRouter.builder().
                 id(Id.withoutId()).
