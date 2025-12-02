@@ -47,8 +47,7 @@ public class RouterManagementInputPort implements RouterManagementUseCase {
     @Override
     public Router removeRouterFromCoreRouter(Router router, CoreRouter coreRouter) {
         var removeRouter = coreRouter.removeRouter(router);
-        //persistRouter(removeRouter);
-        return removeRouter;
+        return persistRouter(removeRouter);
     }
 
     @Override

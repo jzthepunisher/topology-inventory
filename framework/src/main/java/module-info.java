@@ -5,9 +5,15 @@ module framework {
     requires org.eclipse.persistence.core;
     requires java.sql;
     requires jakarta.persistence;
-    requires com.fasterxml.jackson.databind;
-    requires com.fasterxml.jackson.core;
     requires jakarta.cdi;
+    requires jakarta.inject;
+    requires jakarta.ws.rs;
+    requires io.smallrye.mutiny;
+    requires io.smallrye.common.annotation;
+    requires com.fasterxml.jackson.annotation;
+    requires microprofile.openapi.api;
+    requires com.fasterxml.jackson.core;
+    requires com.fasterxml.jackson.databind;
 
     exports pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;
     opens pe.com.ideasystem.topologyinventory.framework.adapters.output.h2.data;

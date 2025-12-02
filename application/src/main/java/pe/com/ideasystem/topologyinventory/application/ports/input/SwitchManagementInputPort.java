@@ -44,6 +44,7 @@ public class SwitchManagementInputPort implements SwitchManagementUseCase {
 
     @Override
     public EdgeRouter addSwitchToEdgeRouter(Switch networkSwitch, EdgeRouter edgeRouter) {
+        networkSwitch.setRouterId(edgeRouter.getId());
         edgeRouter.addSwitch(networkSwitch);
         return edgeRouter;
     }
