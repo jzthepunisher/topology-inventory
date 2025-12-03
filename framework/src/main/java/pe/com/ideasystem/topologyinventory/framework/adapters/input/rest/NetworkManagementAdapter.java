@@ -3,6 +3,7 @@ package pe.com.ideasystem.topologyinventory.framework.adapters.input.rest;
 import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -28,6 +29,7 @@ public class NetworkManagementAdapter {
     @Inject
     NetworkManagementUseCase networkManagementUseCase;
 
+    @Transactional
     @POST
     @Path("/add/{switchId}")
     @Operation(operationId = "addNetworkToSwitch", description = "Add network to a switch")
@@ -48,6 +50,7 @@ public class NetworkManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @DELETE
     @Path("/{networkName}/from/{switchId}")
     @Operation(operationId = "removeNetworkFromSwitch", description = "Remove network from a switch")

@@ -3,6 +3,7 @@ package pe.com.ideasystem.topologyinventory.framework.adapters.input.rest;
 import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
@@ -31,6 +32,7 @@ public class SwitchManagementAdapter {
     @Inject
     RouterManagementUseCase routerManagementUseCase;
 
+    @Transactional
     @GET
     @Path("/{id}")
     @Operation(operationId = "retrieveSwitch", description = "Retrieve a switch from an edge router")
@@ -43,6 +45,7 @@ public class SwitchManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @POST
     @Path("/create/{edgeRouterId}")
     @Operation(operationId = "createAndAddSwitchToEdgeRouter", description = "Create switch and add to an edge router")
@@ -68,6 +71,7 @@ public class SwitchManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @DELETE
     @Path("/{switchId}/from/{edgeRouterId}")
     @Operation(operationId = "removeSwitch", description = "Retrieve a router from the network inventory")

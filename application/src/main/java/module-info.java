@@ -3,6 +3,7 @@ module application {
     requires static lombok;
     requires jakarta.inject;
     requires jakarta.cdi;
+    requires arc;
 
     exports pe.com.ideasystem.topologyinventory.application.ports.input;
     exports pe.com.ideasystem.topologyinventory.application.ports.output;

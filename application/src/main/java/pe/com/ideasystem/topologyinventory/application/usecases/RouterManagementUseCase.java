@@ -19,7 +19,7 @@ public interface RouterManagementUseCase {
                         Location location,
                         RouterType routerType);
 
-    Router removeRouter(Id id);
+    boolean removeRouter(Id id);
 
     CoreRouter addRouterToCoreRouter(Router router,
                                      CoreRouter coreRouter);

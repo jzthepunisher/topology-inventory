@@ -3,6 +3,7 @@ package pe.com.ideasystem.topologyinventory.framework.adapters.input.rest;
 import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
@@ -28,6 +29,7 @@ public class RouterManagementAdapter {
     @Inject
     RouterManagementUseCase routerManagementUseCase;
 
+    @Transactional
     @GET
     @Path("/{id}")
     @Operation(operationId = "retrieveRouter", description = "Retrieve a router from the network inventory")
@@ -40,6 +42,7 @@ public class RouterManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @DELETE
     @Path("/{id}")
     @Operation(operationId = "removeRouter", description = "Remove a router from the network inventory")
@@ -52,6 +55,7 @@ public class RouterManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @POST
     @Path("/")
     @Operation(operationId = "createRouter", description = "Create and persist a new router on the network inventory")
@@ -74,6 +78,7 @@ public class RouterManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
     @POST
     @Path("/add")
     @Operation(operationId = "addRouterToCoreRouter", description = "Add a router into a core router")
@@ -91,6 +96,27 @@ public class RouterManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
+    @POST
+    @Path("/{routerId}/to/{coreRouterId}")
+    @Operation(operationId = "addRouterToCoreRouter", description = "Add a router into a core router")
+    public Uni<Response> addRouterToCoreRouter(
+            @PathParam("routerId") String routerId, @PathParam("coreRouterId") String coreRouterId) {
+        Router router = routerManagementUseCase
+                .retrieveRouter(Id.withId(routerId));
+        CoreRouter coreRouter = (CoreRouter) routerManagementUseCase
+                .retrieveRouter(Id.withId(coreRouterId));
+
+        return Uni.createFrom()
+                .item(routerManagementUseCase.
+                        addRouterToCoreRouter(router, coreRouter))
+                .onItem()
+                .transform(f -> f != null ? Response.ok(f) : Response.ok(null))
+                .onItem()
+                .transform(Response.ResponseBuilder::build);
+    }
+
+    @Transactional
     @DELETE
     @Path("/{routerId}/from/{coreRouterId}")
     @Operation(operationId = "removeRouterFromCoreRouter", description = "Remove a router from a core router")

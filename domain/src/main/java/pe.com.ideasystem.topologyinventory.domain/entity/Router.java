@@ -1,6 +1,7 @@
 package pe.com.ideasystem.topologyinventory.domain.entity;
 
 import lombok.Getter;
+import lombok.Setter;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
 import pe.com.ideasystem.topologyinventory.domain.vo.Id;
 import pe.com.ideasystem.topologyinventory.domain.vo.Location;
@@ -14,6 +15,9 @@ import java.util.function.Predicate;
 public abstract sealed class Router extends Equipment permits CoreRouter, EdgeRouter {
 
     protected final RouterType routerType;
+
+    @Setter
+    public Id parentRouterId;
 
     public Router(Id id, Vendor vendor, Model model, IP ip, Location location, RouterType routerType) {
         super(id, vendor, model, ip, location);
