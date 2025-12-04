@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.074" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.071" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PE"/>
     <property name="sun.boot.library.path" value="/Users/yericoezeta/Library/Java/JavaVirtualMachines/azul-17.0.11/Contents/Home/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/target/surefire 2025-12-03T18-37-45_226-jvmRun1 surefire11122163803147435114tmp surefire_012774710840711174504tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/target/surefire 2025-12-03T19-21-07_020-jvmRun1 surefire5598490662269266863tmp surefire_03749479747356112972tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
@@ -60,16 +60,16 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="addSwitchToEdgeRouter_failBecauseEquipmentOfDifferentCountries" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.01"/>
-  <testcase name="removeNetwork" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.002"/>
+  <testcase name="addSwitchToEdgeRouter_failBecauseEquipmentOfDifferentCountries" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.009"/>
+  <testcase name="removeNetwork" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="removeRouter" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="removeSwitch" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="addNetworkToSwitch_failBecauseSameNetworkAddress" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="addCoreToCoreRouter" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
-  <testcase name="addEdgeToCoreRouter" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
+  <testcase name="addEdgeToCoreRouter" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="addNetworkToSwitch" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
   <testcase name="addEdgeToCoreRouter_failBecauseRoutersOfDifferentCountries" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
   <testcase name="addSwitchToEdgeRouter" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
-  <testcase name="addCoreToCoreRouter_failBecauseRoutersOfSameIp" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
-  <testcase name="filterRouterByType" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
+  <testcase name="addCoreToCoreRouter_failBecauseRoutersOfSameIp" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0.001"/>
+  <testcase name="filterRouterByType" classname="pe.com.ideasystem.topologyinventory.domain.DomainTest" time="0"/>
 </testsuite>

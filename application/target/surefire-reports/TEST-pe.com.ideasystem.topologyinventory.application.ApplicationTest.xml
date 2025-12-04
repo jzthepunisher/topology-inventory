@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="2.846" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="2.889" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PE"/>
     <property name="sun.boot.library.path" value="/Users/yericoezeta/Library/Java/JavaVirtualMachines/azul-17.0.11/Contents/Home/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/target/surefire 2025-12-03T18-37-45_226-jvmRun1 surefire162658152103958035tmp surefire_114689875865124023479tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/application/target/surefire 2025-12-03T19-21-07_020-jvmRun1 surefire1431409973396246247tmp surefire_16526641455181163782tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
@@ -61,21 +61,18 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="getTests[1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.006"/>
-  <testcase name="getTests[2][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
-  <testcase name="getTests[2][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.028"/>
+  <testcase name="getTests[2][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
+  <testcase name="getTests[2][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.031"/>
   <testcase name="getTests[3][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
   <testcase name="getTests[3][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.004"/>
   <testcase name="getTests[3][3]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.002"/>
   <testcase name="getTests[4][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
-  <testcase name="getTests[4][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.002"/>
-  <testcase name="getTests[4][3]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
-  <testcase name="getTests[5][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
+  <testcase name="getTests[4][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.003"/>
+  <testcase name="getTests[5][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
   <testcase name="getTests[5][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.002"/>
   <testcase name="getTests[6][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
-  <testcase name="getTests[6][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
-  <testcase name="getTests[7][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
-  <testcase name="getTests[7][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.008"/>
-  <testcase name="getTests[8][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
-  <testcase name="getTests[8][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.002"/>
-  <testcase name="getTests[9]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
+  <testcase name="getTests[6][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.007"/>
+  <testcase name="getTests[7][1]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0"/>
+  <testcase name="getTests[7][2]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.002"/>
+  <testcase name="getTests[8]" classname="pe.com.ideasystem.topologyinventory.application.ApplicationTest" time="0.001"/>
 </testsuite>

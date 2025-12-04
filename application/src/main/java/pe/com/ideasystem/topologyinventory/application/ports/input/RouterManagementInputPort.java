@@ -16,7 +16,6 @@ import pe.com.ideasystem.topologyinventory.domain.vo.RouterType;
 import pe.com.ideasystem.topologyinventory.domain.vo.Vendor;
 
 @ApplicationScoped
-@NoArgsConstructor
 public class RouterManagementInputPort implements RouterManagementUseCase {
 
     @Inject
@@ -40,8 +39,7 @@ public class RouterManagementInputPort implements RouterManagementUseCase {
     @Override
     public CoreRouter addRouterToCoreRouter(Router router, CoreRouter coreRouter) {
         var addedRouter = coreRouter.addRouter(router);
-        //persistRouter(addedRouter);
-        return addedRouter;
+        return (CoreRouter) persistRouter(addedRouter);
     }
 
     @Override

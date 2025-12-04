@@ -34,11 +34,8 @@ public class NetworkManagementInputPort implements NetworkManagementUseCase {
     public Switch addNetworkToSwitch(Network network, Switch networkSwitch) {
         Id routerId = networkSwitch.getRouterId();
         Id switchId = networkSwitch.getId();
-        EdgeRouter edgeRouter = (EdgeRouter) routerManagementOutputPort
-                .retrieveRouter(routerId);
-        Switch switchToAddNetwork = edgeRouter
-                .getSwitches()
-                .get(switchId);
+        EdgeRouter edgeRouter = (EdgeRouter) routerManagementOutputPort.retrieveRouter(routerId);
+        Switch switchToAddNetwork = edgeRouter.getSwitches().get(switchId);
         switchToAddNetwork.addNetworkToSwitch(network);
         routerManagementOutputPort.persistRouter(edgeRouter);
         return switchToAddNetwork;
