@@ -1,0 +1,7 @@
+quarkus:
+  datasource:
+    name: mysql
+    username: ${QUARKUS_DATASOURCE_USERNAME:root}
+    password: ${QUARKUS_DATASOURCE_PASSWORD:password}
+    reactive:
+      url: ${QUARKUS_DATASOURCE_REACTIVE_URL:mysql://localhost:3306/inventory}

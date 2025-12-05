@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: pe.com.ideasystem.topologyinventory.framework.adapters.output.mysql.SwitchManagementMySQLAdapterTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in pe.com.ideasystem.topologyinventory.framework.adapters.output.mysql.SwitchManagementMySQLAdapterTest
