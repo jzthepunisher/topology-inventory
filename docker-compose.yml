@@ -1,0 +1,10 @@
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: p2p
