@@ -2,16 +2,9 @@ package pe.com.ideasystem.topologyinventory.domain.specification;
 
 import pe.com.ideasystem.topologyinventory.domain.exception.GenericSpecificationException;
 
-public abstract sealed class AbstractSpecification<T> implements Specification<T> permits
-        AndSpecification,
-        SameCountrySpec,
-        SameIpSpec,
-        EmptyRouterSpec,
-        EmptySwitchSpec,
-        EmptyNetworkSpec,
-        NetworkAvailabilitySpec,
-        CIDRSpecification,
-        NetworkAmountSpec
+public abstract sealed class AbstractSpecification<T>
+        implements Specification<T>
+        permits AllowedCitySpec, AllowedCountrySpec, AndSpecification, CIDRSpecification, EmptyNetworkSpec, EmptyRouterSpec, EmptySwitchSpec, NetworkAmountSpec, NetworkAvailabilitySpec, SameCountrySpec, SameIpSpec
 {
 
     public abstract boolean isSatisfiedBy(T t);

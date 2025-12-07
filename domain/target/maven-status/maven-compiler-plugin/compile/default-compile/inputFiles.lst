@@ -1,3 +1,4 @@
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/specification/AllowedCountrySpec.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/specification/SameIpSpec.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/vo/Id.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/exception/GenericSpecificationException.java
@@ -10,6 +11,7 @@
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/entity/Switch.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/service/SwitchService.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/vo/IP.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/specification/AllowedCitySpec.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/vo/SwitchType.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/vo/Model.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/domain/src/main/java/pe.com.ideasystem.topologyinventory.domain/specification/NetworkAmountSpec.java

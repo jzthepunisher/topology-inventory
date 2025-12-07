@@ -30,4 +30,6 @@ public interface RouterManagementUseCase {
     Router retrieveRouter(Id id);
 
     Router persistRouter(Router router);
+
+    Router changeLocation(Router router, Location location);
 }

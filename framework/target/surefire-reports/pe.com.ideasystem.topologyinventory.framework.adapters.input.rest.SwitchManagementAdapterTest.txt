@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.SwitchManagementAdapterTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.626 s <<< FAILURE! - in pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.SwitchManagementAdapterTest
+retrieveSwitch  Time elapsed: 0.865 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.SwitchManagementAdapterTest.retrieveSwitch(SwitchManagementAdapterTest.java:39)
+
+createAndAddSwitchToEdgeRouter  Time elapsed: 0.109 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.SwitchManagementAdapterTest.createAndAddSwitchToEdgeRouter(SwitchManagementAdapterTest.java:66)
+
+removeSwitchFromEdgeRouter  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.SwitchManagementAdapterTest.removeSwitchFromEdgeRouter(SwitchManagementAdapterTest.java:91)
+

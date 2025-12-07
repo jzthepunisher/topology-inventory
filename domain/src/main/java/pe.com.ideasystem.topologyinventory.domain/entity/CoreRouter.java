@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import pe.com.ideasystem.topologyinventory.domain.specification.AllowedCountrySpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptyRouterSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptySwitchSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.SameCountrySpec;
@@ -59,5 +60,12 @@ public final class CoreRouter extends Router {
         }
 
         return this.routers.remove(anyRouter.id);
+    }
+
+    @Override
+    public void changeLocation(Location location) {
+        var allowedCountrySpec = new AllowedCountrySpec();
+        allowedCountrySpec.check(location);
+        this.location = location;
     }
 }

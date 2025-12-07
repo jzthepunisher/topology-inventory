@@ -34,3 +34,13 @@ minikube ssh "ip addr show eth0 | grep \"inet\b\" | awk '{print$2}' | cut -d/ -f
 // 192.168.49.2
 Open http://192.168.49.2:30080/q/health/ready in the browser
 ```
+sudo ln -s $HOME/.docker/run/docker.sock /var/run/docker.sock
+
+
+
+docker tag people.webapp:v1 peoplecli.azurecr.io/people.webapp:v1
+docker tag topology-inventory:latest topology-inventory:v1
+
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+docker tag topology-inventory:v1 localhost:5000/topology-inventory:v1
+docker push localhost:5000/topology-inventory:v1

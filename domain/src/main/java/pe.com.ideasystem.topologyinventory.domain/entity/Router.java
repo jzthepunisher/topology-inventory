@@ -35,4 +35,6 @@ public abstract sealed class Router extends Equipment permits CoreRouter, EdgeRo
     public static Predicate<Equipment> getCountryPredicate(Location location) {
         return p -> p.location.country().equals(location.country());
     }
+
+    public abstract void changeLocation(Location location);
 }

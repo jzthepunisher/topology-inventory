@@ -3,6 +3,7 @@ pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/SwitchManageme
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/NetworkData.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/RouterData$RouterDataBuilder.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/SwitchData.class
+pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/request/router/LocationChange$LocationChangeBuilder.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/LocationData.class
 pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/request/network/AddNetwork$AddNetworkBuilder.class
 pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/deserializer/SwitchDeserializer.class
@@ -33,4 +34,5 @@ pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/IPData.
 pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/request/router/CreateRouter$CreateRouterBuilder.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/SwitchData$SwitchDataBuilder.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/repository/SwitchManagementRepository.class
+pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/request/router/LocationChange.class
 pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/repository/RouterManagementRepository.class

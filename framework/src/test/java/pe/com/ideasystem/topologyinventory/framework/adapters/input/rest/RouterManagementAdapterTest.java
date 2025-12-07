@@ -133,4 +133,37 @@ public class RouterManagementAdapterTest {
                 10F
         );
     }
+
+    @Test
+    @Order(6)
+    public void changeLocation() throws IOException {
+        var routerId = "b832ef4f-f894-4194-8feb-a99c2cd4be0c";
+        var expectedCountry = "Germany";
+        var location = createLocation("Germany", "Berlin");
+        var updatedRouterStr = given()
+                .contentType("application/json")
+                .pathParam("routerId", routerId)
+                .body(location)
+                .when()
+                .post("/router/changeLocation/{routerId}")
+                .then()
+                .statusCode(200)
+                .extract()
+                .asString();
+        var changedCountry = getRouterDeserialized(updatedRouterStr).getLocation().country();
+
+        assertEquals(expectedCountry, changedCountry);
+    }
+
+    public static Location createLocation(String country, String city){
+        return new Location(
+                "Test street",
+                city,
+                "Test State",
+                00000,
+                country,
+                10F,
+                10F
+        );
+    }
 }

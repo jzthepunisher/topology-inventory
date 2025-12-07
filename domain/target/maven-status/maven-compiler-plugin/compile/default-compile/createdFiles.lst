@@ -14,6 +14,7 @@ pe/com/ideasystem/topologyinventory/domain/entity/Switch$SwitchBuilder.class
 pe/com/ideasystem/topologyinventory/domain/specification/NetworkAmountSpec.class
 pe/com/ideasystem/topologyinventory/domain/vo/Network$NetworkBuilder.class
 pe/com/ideasystem/topologyinventory/domain/specification/AndSpecification.class
+pe/com/ideasystem/topologyinventory/domain/specification/AllowedCountrySpec.class
 pe/com/ideasystem/topologyinventory/domain/specification/SameCountrySpec.class
 pe/com/ideasystem/topologyinventory/domain/vo/SwitchType.class
 pe/com/ideasystem/topologyinventory/domain/specification/EmptySwitchSpec.class
@@ -28,6 +29,7 @@ pe/com/ideasystem/topologyinventory/domain/entity/CoreRouter$CoreRouterBuilder.c
 pe/com/ideasystem/topologyinventory/domain/entity/factory/RouterFactory.class
 pe/com/ideasystem/topologyinventory/domain/vo/Model.class
 pe/com/ideasystem/topologyinventory/domain/vo/RouterType.class
+pe/com/ideasystem/topologyinventory/domain/specification/AllowedCitySpec.class
 pe/com/ideasystem/topologyinventory/domain/entity/EdgeRouter.class
 pe/com/ideasystem/topologyinventory/domain/specification/Specification.class
 pe/com/ideasystem/topologyinventory/domain/vo/Id.class

@@ -2,6 +2,7 @@
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/converter/IdParamConverterProvider.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/SwitchManagementMySQLAdapter.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/SwitchData.java
+/Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/input/rest/request/router/LocationChange.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/RouterTypeData.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/IPData.java
 /Users/yericoezeta/Documents/Learning/book-designing-hexagonal/source-code-github/topology-inventory/framework/src/main/java/pe/com/ideasystem/topologyinventory/framework/adapters/output/mysql/data/RouterData.java

@@ -17,8 +17,10 @@ import pe.com.ideasystem.topologyinventory.domain.entity.CoreRouter;
 import pe.com.ideasystem.topologyinventory.domain.entity.Router;
 import pe.com.ideasystem.topologyinventory.domain.vo.IP;
 import pe.com.ideasystem.topologyinventory.domain.vo.Id;
+import pe.com.ideasystem.topologyinventory.domain.vo.Location;
 import pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.request.router.AddRouter;
 import pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.request.router.CreateRouter;
+import pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.request.router.LocationChange;
 
 
 @ApplicationScoped
@@ -135,4 +137,19 @@ public class RouterManagementAdapter {
                 .transform(Response.ResponseBuilder::build);
     }
 
+    @Transactional
+    @POST
+    @Path("/changeLocation/{routerId}")
+    @Operation(operationId = "changeLocation", description = "Change a router location")
+    public Uni<Response> changeLocation(@PathParam("routerId") String routerId, LocationChange locationChange) {
+        Router router = routerManagementUseCase
+                .retrieveRouter(Id.withId(routerId));
+        Location location = locationChange.mapToDomain();
+        return Uni.createFrom()
+                .item(routerManagementUseCase.changeLocation(router, location))
+                .onItem()
+                .transform(f -> f != null ? Response.ok(f) : Response.ok(null))
+                .onItem()
+                .transform(Response.ResponseBuilder::build);
+    }
 }

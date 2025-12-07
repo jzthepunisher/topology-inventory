@@ -21,7 +21,7 @@ spec:
       containers:
         - name: topology-inventory
           image: topology-inventory:latest
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:
                 name: topology-inventory

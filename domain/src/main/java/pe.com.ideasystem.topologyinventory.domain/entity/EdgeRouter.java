@@ -4,6 +4,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import pe.com.ideasystem.topologyinventory.domain.specification.AllowedCitySpec;
+import pe.com.ideasystem.topologyinventory.domain.specification.AllowedCountrySpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.EmptyNetworkSpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.SameCountrySpec;
 import pe.com.ideasystem.topologyinventory.domain.specification.SameIpSpec;
@@ -53,4 +55,12 @@ public final class EdgeRouter extends Router {
         return this.switches.remove(anySwitch.id);
     }
 
+    @Override
+    public void changeLocation(Location location) {
+        var allowedCountrySpec = new AllowedCountrySpec();
+        var allowedCitySpec = new AllowedCitySpec();
+        allowedCountrySpec.check(location);
+        allowedCitySpec.check(location);
+        this.location = location;
+    }
 }

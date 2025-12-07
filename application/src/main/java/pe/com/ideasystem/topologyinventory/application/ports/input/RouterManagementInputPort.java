@@ -58,4 +58,10 @@ public class RouterManagementInputPort implements RouterManagementUseCase {
         return routerManagementOutputPort.persistRouter(router);
     }
 
+    @Override
+    public Router changeLocation(Router router, Location location) {
+        router.changeLocation(location);
+        return persistRouter(router);
+    }
+
 }

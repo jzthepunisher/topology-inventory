@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.08 s <<< FAILURE! - in pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest
+retrieveRouter  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest.retrieveRouter(RouterManagementAdapterTest.java:39)
+
+addRouterToCoreRouter  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest.addRouterToCoreRouter(RouterManagementAdapterTest.java:83)
+
+removeRouterFromCoreRouter  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest.removeRouterFromCoreRouter(RouterManagementAdapterTest.java:104)
+
+removeRouter  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest.removeRouter(RouterManagementAdapterTest.java:122)
+
+changeLocation  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at pe.com.ideasystem.topologyinventory.framework.adapters.input.rest.RouterManagementAdapterTest.changeLocation(RouterManagementAdapterTest.java:150)
+
